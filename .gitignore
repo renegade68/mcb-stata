@@ -1,0 +1,12 @@
+*.log
+*.smcl
+*.stswp
+*.dta
+.DS_Store
+output/
+onboarding_example/
+suite_example/
+mcbhsu_replication/
+mcbhsu_installation_check/
+my_installation_check*/
+mcbhsu_paper_results/

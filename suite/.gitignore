@@ -1,0 +1,11 @@
+*.log
+*.smcl
+*.stswp
+.DS_Store
+output/
+onboarding_example/
+suite_example/
+mcbhsu_replication/
+
+# Default isolated installation test folder
+mcbhsu_installation_check/

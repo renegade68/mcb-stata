@@ -1,0 +1,12 @@
+Copyright 2026 Choonjoo Lee.
+Licensed under the Academic Free License version 3.0.
+See mcbhsu_license.txt (also LICENSE in the source repository).
+
+This is a newly written Stata/Mata implementation of established statistical
+constructions. Mathematical algorithm reference: SAS Sample Library MCB,
+support Randy Tobias, updated 16 January 1996. No SAS macro source is included.
+No affiliation, endorsement, or vendor executable validation is claimed.
+
+Edwards, D. G., and J. C. Hsu (1983). Multiple comparisons with the best
+treatment. JASA 78:965-971. doi:10.1080/01621459.1983.10477047.
+Hsu, J. C. (1996). Multiple Comparisons: Theory and Methods. Chapman & Hall.

@@ -1,0 +1,6 @@
+v 3
+d mcbhsu suite 0.1.5: core, summary input and practical margins
+p mcbhsu Multiple comparisons with the best, engine 0.9.2
+p mcbhsus Group summary input, version 0.1.1
+p mcbhsumargin Practical distance margins, version 0.1.1
+p mcbhsu_suite Integrated guide and complete workflow, version 0.1.5

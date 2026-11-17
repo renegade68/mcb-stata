@@ -1,0 +1,6 @@
+* text=auto eol=lf
+# Preserve the exact tested package and original companion bytes on every checkout.
+suite/** -text
+examples/published-filters/** -text
+*.png binary
+*.zip binary

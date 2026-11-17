@@ -1,0 +1,11 @@
+v 3
+d mcbhsumargin 0.1.1: practical distance margins for Hsu MCB
+d Requires mcbhsu 0.9.2 and Stata 16.1 or later
+d Author: Choonjoo Lee
+d License: AFL-3.0
+d Distribution-Date: 20261113
+f mcbhsumargin.ado
+f mcbhsumargin.mata
+f mcbhsumargin.sthlp
+f demo_mcbhsumargin.do
+f mcbhsumargin_license.txt

@@ -1,0 +1,14 @@
+v 3
+d mcbhsu 0.9.2: Multiple comparisons with the best
+d Independent one-way normal model with a common unknown variance
+d Stata 16.1 or later; release candidate
+d Author: Choonjoo Lee
+d License: AFL-3.0
+d Distribution-Date: 20261111
+f mcbhsu.ado
+f mcbhsu.mata
+f mcbhsu.sthlp
+f demo_mcbhsu.do
+f mcbhsu_readme.txt
+f mcbhsu_license.txt
+f mcbhsu_notice.txt

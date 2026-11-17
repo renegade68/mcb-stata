@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "Please cite this software and the methodological references in docs/methods.md."
+title: "MCB suite: Multiple comparisons with the best for Stata"
+type: software
+authors:
+  - family-names: Lee
+    given-names: Choonjoo
+version: 0.1.5
+date-released: 2026-11-17
+repository-code: "https://github.com/renegade68/mcbhsu-stata"
+license: AFL-3.0
+abstract: "Stata/Mata suite for independent one-way normal models with a common variance: raw observations, summary input and practical distance margins. Release candidate."
