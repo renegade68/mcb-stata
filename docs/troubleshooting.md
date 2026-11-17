@@ -38,7 +38,7 @@ the folder containing `install_mcbhsu_suite.do`.
 
 ## Checksum error r(459)
 
-Use the complete matching suite 0.1.5. Do not mix components from different
+Use the complete matching suite 0.1.6. Do not mix components from different
 versions or edit files inside `suite/`. A stale copy in the current working
 directory can take precedence over the installed command. Inspect:
 

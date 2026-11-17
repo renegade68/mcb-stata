@@ -5,8 +5,17 @@ type: software
 authors:
   - family-names: Lee
     given-names: Choonjoo
-version: 0.1.5
+version: 0.1.6
 license: AFL-3.0
 abstract: "Stata/Mata suite for independent one-way normal models with a common variance: raw observations, summary input and practical distance margins. Release candidate."
 repository-code: "https://github.com/renegade68/mcb-stata"
 url: "https://github.com/renegade68/mcb-stata"
+references:
+  - {"type": "article", "authors": [{"family-names": "Edwards", "given-names": "Donald G."}, {"family-names": "Hsu", "given-names": "Jason C."}], "year": 1983, "title": "Multiple Comparisons with the Best Treatment", "journal": "Journal of the American Statistical Association", "volume": 78, "issue": 384, "start": 965, "end": 971, "doi": "10.2307/2288211", "url": "https://doi.org/10.2307/2288211"}
+  - {"type": "article", "authors": [{"family-names": "Edwards", "given-names": "Donald G."}, {"family-names": "Hsu", "given-names": "Jason C."}], "year": 1984, "title": "Corrigenda: Multiple Comparisons with the Best Treatment", "journal": "Journal of the American Statistical Association", "volume": 79, "issue": 388, "start": 965, "end": 965, "doi": "10.2307/2288771", "url": "https://doi.org/10.2307/2288771"}
+  - {"type": "article", "authors": [{"family-names": "Hsu", "given-names": "Jason C."}], "year": 1981, "title": "Simultaneous Confidence Intervals for all Distances from the \"Best\"", "journal": "The Annals of Statistics", "volume": 9, "issue": 5, "start": 1026, "end": 1034, "doi": "10.1214/aos/1176345582", "url": "https://doi.org/10.1214/aos/1176345582"}
+  - {"type": "article", "authors": [{"family-names": "Hsu", "given-names": "Jason C."}], "year": 1984, "title": "Constrained Simultaneous Confidence Intervals for Multiple Comparisons with the Best", "journal": "The Annals of Statistics", "volume": 12, "issue": 3, "start": 1136, "end": 1144, "doi": "10.1214/aos/1176346732", "url": "https://doi.org/10.1214/aos/1176346732"}
+  - {"type": "book", "authors": [{"family-names": "Hsu", "given-names": "Jason C."}], "year": 1996, "title": "Multiple Comparisons: Theory and Methods", "publisher": {"name": "Chapman & Hall", "city": "London"}, "isbn": "0-412-98281-1", "url": "https://www.asc.ohio-state.edu/hsu.1/book.html"}
+  - {"type": "article", "authors": [{"family-names": "Tukey", "given-names": "John W."}], "year": 1949, "title": "Comparing Individual Means in the Analysis of Variance", "journal": "Biometrics", "volume": 5, "issue": 2, "start": 99, "end": 114, "doi": "10.2307/3001913", "url": "https://doi.org/10.2307/3001913"}
+  - {"type": "article", "authors": [{"family-names": "Kramer", "given-names": "Clyde Young"}], "year": 1956, "title": "Extension of Multiple Range Tests to Group Means with Unequal Numbers of Replications", "journal": "Biometrics", "volume": 12, "issue": 3, "start": 307, "end": 310, "doi": "10.2307/3001469", "url": "https://doi.org/10.2307/3001469"}
+  - {"type": "generic", "authors": [{"name": "SAS Institute Inc."}], "year": 1996, "title": "MCB: Multiple Comparisons with the Best", "url": "https://support.sas.com/documentation/onlinedoc/stat/ex_code/132/mcb.html", "notes": "SAS Sample Library; support contact Randy Tobias; updated 16 January 1996.", "date-accessed": "2026-11-17"}

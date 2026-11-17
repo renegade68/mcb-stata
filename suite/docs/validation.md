@@ -1,104 +1,97 @@
-## Suite 0.1.5: Windows installer correction
+# Validation and remaining limits
 
-Core 0.9.2 and summary/margin 0.1.1 calculations are unchanged. On Windows/MP
-16.1, all 14 source-directory numerical quickchecks passed for suite 0.1.4.
-Its installation check stopped with r(459): net install changed LF line endings
-to CRLF, and the post-install checksum rejected otherwise identical content.
-Suite 0.1.5 accepts either the exact source bytes or their complete CRLF form
-for installed files. The extracted source files still require exact checksums.
-The full Windows installation/help workflow must be rerun on this candidate;
-the successful numerical checks alone do not establish that workflow passed.
+## Current candidate: suite 0.1.6 (documentation revision)
 
-# Validation and known limitations
+Suite 0.1.6 completes reference attribution and updates documentation and package
+metadata. The six statistical ado/Mata files and all 57 help example commands
+are byte-for-byte unchanged from suite 0.1.5. It includes core 0.9.2,
+summary 0.1.1 and margin 0.1.1.
 
-The current sources are core 0.9.2, summary 0.1.1 and margin 0.1.1 in suite 0.1.5.
-The Edwards–Hsu upper-bound domain now follows the original theorem.
+For 0.1.6, installation and reinstallation, all 57 commands extracted from the
+four installed help files, 14 analytic quickchecks, the first-steps and combined
+examples, and the published-filter companion passed on macOS Stata/MP 16.1.
+Package source and installed-file integrity checks cover the revised documents.
 
-## A check you can run
+The native Windows checks below were run on **0.1.5**, not on the 0.1.6 package.
+They remain evidence for the unchanged calculations and installer logic, but do
+not constitute a new Windows execution of the revised package. The 57-command
+individual-help sweep was not run on Windows. Linux remains unverified.
 
-Save your data, then run `do verify.do` from the extracted folder after installation.
-It creates its own data and compares two-group results against analytic t
-calculations and native Stata regression. Fourteen cases cover the three methods,
-both directions, separated/tied means, missing observations and string keys.
-It also checks saved labels and preservation of data and regression coefficients.
-Success is reported as `MCBHSU_INDEPENDENT_QUICKCHECK_PASSED`; outputs are written
-into `mcbhsu_replication/`. This small check is not validation of every multi-group design.
+## Recorded native macOS and Windows checks: suite 0.1.5
 
-`do demo_mcbhsu_suite.do` also checks agreement between raw-data and summary-data
-results and three practical-margin decisions. `do first_steps.do` reproduces
-the user-facing example and graph.
+The suite contains `mcbhsu` 0.9.2, `mcbhsus` 0.1.1 and `mcbhsumargin` 0.1.1.
+The installation workflow completed on **macOS and a separate Windows computer,
+both running Stata/MP 16.1**. The Windows evidence was received on 17 November 2026.
 
-## Current distribution checks
+| Check | Recorded result |
+| --- | --- |
+| Install and reinstall into isolated PLUS/PERSONAL directories | Passed on both systems |
+| Commands actually loaded from the isolated installation | Confirmed |
+| Commands extracted from the installed combined help | 14 executed successfully on each system |
+| Independent analytic quickchecks | All 14 passed on each system |
+| Raw observations, group summaries and practical-margin workflow | Passed |
+| Windows quickcheck errors and two example CSVs versus macOS | Matched |
+| Windows installed runtime/help files | All 10 matched the suite after accounting for CRLF |
+| Final installation receipt | `MCBHSU_INSTALLATION_CHECK_PASSED` |
 
-The suite 0.1.5 check uses the complete ZIP in isolated PLUS/PERSONAL
-directories on macOS/MP 16.1. The distributed `validate_installation.do` installs
-and reinstalls the packages, runs 14 commands extracted from installed help,
-the integrated workflow, first steps and all 14 quickcheck cases.
-See [how to reproduce the check](external-validation.md). Windows core 0.9.2 numerical checks passed, but the suite 0.1.4 installation
-check stopped on CRLF conversion. The corrected suite 0.1.5 Windows workflow
-requires a rerun. Linux remains unverified.
+The largest scaled error in the 14 analytic quickchecks was approximately
+3.36e-9, below their 1e-6 acceptance threshold. These small two-group checks
+compare against analytic t calculations and native Stata regression; they are
+not a test of every multi-group design or a proof of coverage.
 
-## Existing numerical evidence
+The Windows result identifies the installed PLUS code, not copies in the current
+working folder. The two returned example graphs were checked against their CSVs.
+Local execution paths and raw diagnostic logs are retained in the development
+archive rather than included in this user distribution.
 
-Development validation included independent R integration, tail and boundary
-checks, transformations and candidate rules, and selected raw-data Monte Carlo
-experiments. The expanded numerical set covered 16 designs and 32 critical values;
-raw-data experiments comprised nine designs with 20,000 replicates each plus
-200,000 independent confirmation replicates. These finite checks do not establish
-performance for every supported design. They are prior component evidence, not
-new experiments rerun for core 0.9.2.
+## Line endings and repeated checks
 
-A published 1986 example had an endpoint discrepancy of approximately 0.00068;
-independent R integration supported the implemented critical value, but the
-historical cause of the printed discrepancy remains unresolved. Actual SAS,
-Minitab and JMP executable results have not been obtained.
+An earlier suite 0.1.4 Windows installation stopped because the installed files
+had CRLF line endings and its byte-level check expected LF. Suite 0.1.5 accepts
+the original bytes or their complete CRLF form. Source-folder verification stays
+strict. The subsequent native Windows installation and reinstallation passed.
 
-## Environment and attribution limits
+Using an existing check directory is a different matter: the checker refuses to
+overwrite it. Use a new directory name for another run. See
+[troubleshooting](troubleshooting.md).
 
-Component tests ran in Stata/MP 16.1 on macOS. A separate Intel Mac/MP 16.1 core
-result was received and checked; suite success on that machine was reported by
-the user without a separate full suite log.
+## Mathematical and numerical evidence
 
-On 15 November 2026, results from a separate Windows computer running Stata/MP
-16.1 were received. All 40 distribution files matched the earlier 0.1.1 candidate by
-SHA-256. All 14 quickcheck cases passed, with the success marker present and
-numerical results matching the macOS run (maximum scaled error about 3.36e-9).
-The received suite and first-steps datasets agreed within 1e-10, and the three
-margin decisions and exported graph were checked. The Windows quickcheck loaded
-mcbhsu from the working folder. No Windows installer or full suite execution log
-was received, so these results do not verify installation into PLUS or every
-step of that workflow. Linux and other Stata versions remain unverified.
-That 15 November evidence concerns core 0.9.1. The separate 17 November return
-contains suite 0.1.4: all 44 distribution files match, core 0.9.2 passed all 14
-quickchecks, and the installer failed after text conversion to CRLF. The installed
-help tests were not reached. The new manuscript example was not in this return.
+For the supported independent normal common-variance symmetric construction,
+the Edwards–Hsu 1983 article and 1984 corrigendum were reviewed. Core 0.9.2 uses
+all other groups in the upper bound and the compatible-control set in the lower
+bound. The corrected normal-calibration factor is included.
 
-## Original-paper alignment in core 0.9.2
+The two published filter tables contain 13 intervals. Their high-precision
+calculations agree with an independent evaluation of the original formula to
+approximately 1e-13. Reconstructing with the printed two-decimal means and
+critical values reproduces all 13 printed intervals at one decimal. This is
+consistent with limited printed precision, not a verified account of the
+historical calculation workflow. Calibration probabilities near 0.95 describe
+the fixed-control calculation, not exact 95% coverage of every final MCB interval.
 
-The supplied 1983 JASA article and 1984 JASA corrigendum were reviewed for the
-supported normal common-variance symmetric case. The corrected sqrt(2) calibration
-was already present. The upper bound now follows Theorem 1 and Example 2 by
-maximizing over all other groups. The lower bound and compatible control set S
-are unchanged. Asymmetric and nonparametric cases in the article are not implemented.
+Further recorded checks include boundary rules, group permutations, affine
+transformations, raw/summary agreement, saved-result provenance and finite
+unequal-size comparisons. [Methods](methods.md) distinguishes the signed
+constrained target, Edwards–Hsu distances and the all-pairs Tukey benchmark.
+The unequal-size constrained implementation should not be presented as a
+verbatim consequence of the balanced theorem alone.
 
-The two published filter tables (13 intervals) agree with a separate calculation
-of the original formula to about 1e-13. High-precision endpoints differ from the
-printed endpoints by up to 0.064. Using the printed two-decimal means and critical
-values reproduces all 13 printed intervals at one decimal place. That is consistent
-with printed precision, not a verified account of the authors' calculation workflow.
-Independent evaluation of the corrected calibration gives approximately 0.95 at
-the two computed critical values. This does not assert exact 95% final MCB coverage.
+## Separate manuscript example
 
-Regression checks include an explicit control-wise critical-value fixture that
-distinguishes the all-other-group upper bound from the former S-only bound,
-unequal sample sizes, tied means, singleton S, boundary inclusion, group relabeling,
-affine transformations, best(min), raw/summary agreement and saved-result provenance.
-The distinguishing fixture tests the interval construction with supplied conservative
-critical values; it is not a claim that the current calibration generated those values.
-An earlier finite search of 40,000 unequal-size mean arrays found no upper-bound
-difference. Neither that search nor these checks prove general old/new equivalence
-or coverage across all supported designs. No vendor executable comparison is claimed.
+[The published-filter companion](https://github.com/renegade68/mcb-stata/blob/main/examples/published-filters/README.txt)
+checks both published comparison families, raw/summary agreement, reversal of
+the preferred direction and practical-margin decisions. It was executed on
+macOS/MP 16.1. Its Windows execution is not included in the installation evidence.
+The original companion used suite 0.1.4; the six statistical ado/Mata files and
+component versions are identical in suites 0.1.5 and 0.1.6. The current companion
+updates its citation and version guidance; its do-file and expected results are unchanged.
 
-Support requests should include the command, versions, a small reproducible
-example and the error message. Do not send confidential data or full Stata
-startup logs containing license details.
+## Limits and version-specific notes
+
+Linux and other Stata versions have not been verified. These results cover the
+recorded workflows on the tested systems, not every supported design. Actual
+SAS, JMP and Minitab executable equivalence is not claimed. Asymmetric,
+nonparametric, heteroskedastic and panel constructions are outside this suite.
+
+Candidate status is retained. No journal acceptance or SSC registration is claimed.

@@ -1,24 +1,14 @@
-## Suite 0.1.5: Windows installer correction
-
-Core 0.9.2 and summary/margin 0.1.1 calculations are unchanged. On Windows/MP
-16.1, all 14 source-directory numerical quickchecks passed for suite 0.1.4.
-Its installation check stopped with r(459): net install changed LF line endings
-to CRLF, and the post-install checksum rejected otherwise identical content.
-Suite 0.1.5 accepts either the exact source bytes or their complete CRLF form
-for installed files. The extracted source files still require exact checksums.
-The full Windows installation/help workflow must be rerun on this candidate;
-the successful numerical checks alone do not establish that workflow passed.
-
 # Multiple comparisons with the best for Stata
 
 Compare independent treatment means with the unknown best population mean,
 using a one-way normal model with a common unknown variance.
 [한국어 안내](README_ko.md).
 
-**Suite 0.1.5 — release candidate.** Includes `mcbhsu` 0.9.2 (raw observations),
+**Suite 0.1.6 — release candidate.** Includes `mcbhsu` 0.9.2 (raw observations),
 `mcbhsus` 0.1.1 (group summaries), and `mcbhsumargin` 0.1.1 (practical margins).
 Stata 16.1 or later is required. Ordinary use needs no R, Python or SSC packages.
-Installation and workflow checks cover Stata/MP 16.1 on macOS. Separate Windows/MP 16.1 numerical results are also available; see the [validation scope](docs/validation.md).
+Suite 0.1.6 revises references and documentation. Its macOS/MP 16.1 workflow was checked;
+native Windows installation evidence covers suite 0.1.5. See the [validation scope](docs/validation.md).
 
 ## Install
 
@@ -116,3 +106,7 @@ before using the new margin command.
 
 Copyright 2026 Choonjoo Lee. [AFL-3.0](LICENSE).
 See [citation information](CITATION.cff) and [changes](CHANGELOG.md).
+
+## References and citation
+
+[Complete references and method mapping](docs/methods.md#references-and-attribution) · [BibTeX](docs/references.bib) · [Software citation](CITATION.cff)

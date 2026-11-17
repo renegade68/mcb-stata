@@ -1,5 +1,5 @@
 mcbhsu 0.9.2 release candidate. Copyright 2026 Choonjoo Lee. AFL-3.0.
-Requires Stata 16.1 or later; core 0.9.2 numerical checks in Stata/MP 16.1 on macOS and Windows; Windows installer rerun pending; see docs/validation.md.
+Requires Stata 16.1 or later; core 0.9.2 numerical checks in Stata/MP 16.1 on macOS and Windows; native Windows installation evidence is for suite 0.1.5; suite 0.1.6 is a documentation revision; see docs/validation.md.
 From the complete suite folder: do install_mcbhsu_suite.do
 Then: help mcbhsu
 Save your data before running: do demo_mcbhsu.do

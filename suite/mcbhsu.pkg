@@ -4,7 +4,7 @@ d Independent one-way normal model with a common unknown variance
 d Stata 16.1 or later; release candidate
 d Author: Choonjoo Lee
 d License: AFL-3.0
-d Distribution-Date: 20261111
+d Distribution-Date: 20261117
 f mcbhsu.ado
 f mcbhsu.mata
 f mcbhsu.sthlp

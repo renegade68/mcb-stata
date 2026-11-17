@@ -93,7 +93,15 @@ Locals include {cmd:r(method)}, {cmd:r(best)}, {cmd:r(target)}, {cmd:r(input)},
 (0.1.1), {cmd:r(engine_version)} (0.9.2), {cmd:r(group1)}, ... and {cmd:r(key1)}, ... .
 No input rows or original candidate flags are replaced by margin decisions.{p_end}
 
+{title:References}
+
+{pstd}See {help mcbhsu##references:the full methodological references in mcbhsu}.
+The chosen source method determines which papers to cite. For Edwards-Hsu
+distances, cite Edwards and Hsu (1983) and their 1984 JASA corrigendum together.
+Hsu's 1984 Annals paper is a separate constrained-MCB reference. The downloaded
+folder includes docs/methods.md, docs/references.bib and CITATION.cff.{p_end}
+
 {title:Author and license}
 
-{pstd}Choonjoo Lee. Copyright 2026. AFL-3.0. Private development add-on;
-installation testing uses Stata/MP 16.1 on macOS. Received Windows/MP 16.1 margin outputs were compared; see docs/validation.md for the limits of that evidence.{p_end}
+{pstd}Choonjoo Lee. Copyright 2026. AFL-3.0. Release candidate.
+See docs/validation.md for version-specific macOS and Windows evidence.{p_end}

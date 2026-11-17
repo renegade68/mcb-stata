@@ -1,5 +1,5 @@
 {smcl}
-{* *! suite version 0.1.5 17nov2026}{...}
+{* *! suite version 0.1.6 17nov2026}{...}
 {title:Title}
 
 {p 4 8 2}{cmd:mcbhsu suite} {hline 2} Raw data, group summaries and practical distance decisions{p_end}
@@ -60,17 +60,27 @@ them with summaries. No external data file is needed.{p_end}
 
 {title:Versions and scope}
 
-{pstd}Suite 0.1.5 packages {cmd:mcbhsu} 0.9.2, {cmd:mcbhsus} 0.1.1 and
+{pstd}Suite 0.1.6 packages {cmd:mcbhsu} 0.9.2, {cmd:mcbhsus} 0.1.1 and
 {cmd:mcbhsumargin} 0.1.1. The suite version describes the distribution, not a new
 estimator. Source verification, installation and numerical evidence are recorded
-separately. Installation and workflow checks use Stata/MP 16.1 on macOS. Separate
-Windows/MP 16.1 passed 14 source-directory numerical quickchecks for core 0.9.2.
-Suite 0.1.4 installation checking rejected Windows line-ending conversion;
-suite 0.1.5 fixes that check. The full Windows installed-help workflow still
-requires a rerun. See docs/validation.md in the downloaded folder. The supported normal case has been checked against the
+separately. Suite 0.1.6 revises documentation, references and package metadata;
+the six statistical ado/Mata files are unchanged from 0.1.5. The 0.1.6 install,
+reinstall, all 57 help commands and 14 numerical quickchecks passed on
+macOS/MP 16.1. Native Windows/MP 16.1 evidence covers suite 0.1.5 (installed
+combined-help 14 commands and 14 quickchecks); 0.1.6 has not been rerun there.
+See docs/validation.md in the downloaded folder. The supported normal case has been checked against the
 1983 article and 1984 JASA corrigendum. Version 0.9.2 uses all other groups in
 the Edwards-Hsu upper bound, as in the original theorem.{p_end}
 
+{title:References}
+
+{pstd}See {help mcbhsu##references:the full methodological references in mcbhsu}.
+The chosen source method determines which papers to cite. For Edwards-Hsu
+distances, cite Edwards and Hsu (1983) and their 1984 JASA corrigendum together.
+Hsu's 1984 Annals paper is a separate constrained-MCB reference. The downloaded
+folder includes docs/methods.md, docs/references.bib and CITATION.cff.{p_end}
+
 {title:Author and license}
 
-{pstd}Choonjoo Lee. Copyright 2026. AFL-3.0. Release candidate.{p_end}
+{pstd}Choonjoo Lee. Copyright 2026. AFL-3.0. Release candidate.
+See docs/validation.md for version-specific macOS and Windows evidence.{p_end}

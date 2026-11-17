@@ -1,5 +1,5 @@
 v 3
-d mcbhsu_suite 0.1.5: installation guide and integrated MCB workflow
+d mcbhsu_suite 0.1.6: installation guide and integrated MCB workflow
 d Runtime dependencies: mcbhsu 0.9.2, mcbhsus 0.1.1, mcbhsumargin 0.1.1
 d Use do install_mcbhsu_suite.do from the complete suite ZIP
 d Author: Choonjoo Lee

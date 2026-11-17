@@ -1,6 +1,23 @@
 # Validation and remaining limits
 
-## Current candidate: suite 0.1.5
+## Current candidate: suite 0.1.6 (documentation revision)
+
+Suite 0.1.6 completes reference attribution and updates documentation and package
+metadata. The six statistical ado/Mata files and all 57 help example commands
+are byte-for-byte unchanged from suite 0.1.5. It includes core 0.9.2,
+summary 0.1.1 and margin 0.1.1.
+
+For 0.1.6, installation and reinstallation, all 57 commands extracted from the
+four installed help files, 14 analytic quickchecks, the first-steps and combined
+examples, and the published-filter companion passed on macOS Stata/MP 16.1.
+Package source and installed-file integrity checks cover the revised documents.
+
+The native Windows checks below were run on **0.1.5**, not on the 0.1.6 package.
+They remain evidence for the unchanged calculations and installer logic, but do
+not constitute a new Windows execution of the revised package. The 57-command
+individual-help sweep was not run on Windows. Linux remains unverified.
+
+## Recorded native macOS and Windows checks: suite 0.1.5
 
 The suite contains `mcbhsu` 0.9.2, `mcbhsus` 0.1.1 and `mcbhsumargin` 0.1.1.
 The installation workflow completed on **macOS and a separate Windows computer,
@@ -67,7 +84,8 @@ checks both published comparison families, raw/summary agreement, reversal of
 the preferred direction and practical-margin decisions. It was executed on
 macOS/MP 16.1. Its Windows execution is not included in the installation evidence.
 The original companion used suite 0.1.4; the six statistical ado/Mata files and
-component versions are identical in suite 0.1.5.
+component versions are identical in suites 0.1.5 and 0.1.6. The current companion
+updates its citation and version guidance; its do-file and expected results are unchanged.
 
 ## Limits and version-specific notes
 
@@ -76,8 +94,4 @@ recorded workflows on the tested systems, not every supported design. Actual
 SAS, JMP and Minitab executable equivalence is not claimed. Asymmetric,
 nonparametric, heteroskedastic and panel constructions are outside this suite.
 
-The `suite/` directory is the unchanged tested 0.1.5 distribution. Its embedded
-validation text records the earlier, pending state; this page records the
-subsequently completed Windows check. The mathematical references and historical
-component evidence remain available in [the packaged notes](../suite/docs/validation.md).
 Candidate status is retained. No journal acceptance or SSC registration is claimed.

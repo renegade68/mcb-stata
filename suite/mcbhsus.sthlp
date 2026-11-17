@@ -103,8 +103,15 @@ The numeric values, full labels and keys follow {cmd:mcbhsu}'s conventions.{p_en
 {cmd:r(method)}, {cmd:r(best)}, {cmd:r(target)}, {cmd:r(group1)}, ... and
 {cmd:r(key1)}, ... . Saved data record both versions and the input mode.{p_end}
 
+{title:References}
+
+{pstd}See {help mcbhsu##references:the full methodological references in mcbhsu}.
+The chosen source method determines which papers to cite. For Edwards-Hsu
+distances, cite Edwards and Hsu (1983) and their 1984 JASA corrigendum together.
+Hsu's 1984 Annals paper is a separate constrained-MCB reference. The downloaded
+folder includes docs/methods.md, docs/references.bib and CITATION.cff.{p_end}
+
 {title:Author and license}
 
-{pstd}Choonjoo Lee. Copyright 2026. AFL-3.0; see the distribution license.
-This add-on reuses the core engine; it is not a new statistical methodology.
-Installation checks use Stata/MP 16.1 on macOS. Received Windows/MP 16.1 summary-workflow outputs were compared; see docs/validation.md for the limits of that evidence.{p_end}
+{pstd}Choonjoo Lee. Copyright 2026. AFL-3.0. Release candidate.
+See docs/validation.md for version-specific macOS and Windows evidence.{p_end}

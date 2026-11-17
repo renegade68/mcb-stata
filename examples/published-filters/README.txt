@@ -1,9 +1,9 @@
 Reproduce the independent-group mcbhsu manuscript example
-Suite 0.1.4 companion; 17 November 2026
+Suite 0.1.6 companion; 17 November 2026
 Copyright 2026 Choonjoo Lee. AFL-3.0; see LICENSE.
 
 Requirements
-Stata 16.1 or later and the complete installed suite 0.1.4:
+Stata 16.1 or later and the complete installed suite 0.1.6:
 mcbhsu 0.9.2, mcbhsus 0.1.1, mcbhsumargin 0.1.1.
 No R, Python, external statistical package, or data download is needed.
 This companion does not contain or replace the suite installation package.
@@ -47,5 +47,13 @@ outputs from macOS Stata/MP 16.1. Figures may render differently across platform
 Scope
 Assumes independent normal observations and common within-group variance.
 Not a panel, unequal-variance, DEA, or general estimated-means procedure.
-Current Windows suite results are pending. This example does not replace the
-suite's separate installation check: do validate_installation.do.
+Native Windows installation evidence covers suite 0.1.5; the revised 0.1.6
+package and this companion have not been rerun on Windows. This example does
+not replace the suite installation check: do validate_installation.do.
+
+Full source citations
+Edwards, Donald G., and Hsu, Jason C. (1983). Multiple Comparisons with the Best Treatment. Journal of the American Statistical Association, 78(384), 965-971. https://doi.org/10.2307/2288211
+
+Edwards, Donald G., and Hsu, Jason C. (1984). Corrigenda: Multiple Comparisons with the Best Treatment. Journal of the American Statistical Association, 79(388), 965. https://doi.org/10.2307/2288771
+The 1984 correction concerns calibration; the original numerical examples are unaffected.
+The epsilon=25 illustration is chosen for this software example, not by the article.

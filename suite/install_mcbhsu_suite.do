@@ -73,7 +73,7 @@ program define `installer', rclass
     display as text "Installed mcbhsu 0.9.2, mcbhsus 0.1.1, mcbhsumargin 0.1.1 and suite help."
     display as text "Use help mcbhsu_suite for a complete workflow."
     return scalar packages=4
-    return local suite_version "0.1.5"
+    return local suite_version "0.1.6"
 end
 capture noisily `installer' `"`suite_source'"'
 local rc=_rc

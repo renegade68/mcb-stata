@@ -1,15 +1,15 @@
-mcbhsu 논문 재현 예제 — suite 0.1.4용 별도 자료
+mcbhsu 논문 재현 예제 — suite 0.1.6용 별도 자료
 2026-11-17
 
 필요한 것
-Stata 16.1 이상과 설치된 suite 0.1.4:
+Stata 16.1 이상과 설치된 suite 0.1.6:
   mcbhsu 0.9.2, mcbhsus 0.1.1, mcbhsumargin 0.1.1.
 외부 실행 프로그램이나 데이터 다운로드는 필요하지 않습니다.
 이 예제 묶음은 suite 설치 ZIP을 대체하지 않습니다.
 
 실행 순서
 1. 기존 자료를 저장하고 새 Stata 세션을 엽니다.
-2. 기존 suite 0.1.4 ZIP을 모두 푼 폴더에서 실행합니다.
+2. 기존 suite 0.1.6 ZIP을 모두 푼 폴더에서 실행합니다.
      do install_mcbhsu_suite.do
 3. 이 예제 묶음의 reproduce_mcbhsu.do가 있는 폴더로 이동하여 실행합니다.
      do reproduce_mcbhsu.do
@@ -54,7 +54,14 @@ Stata 16.1 이상과 설치된 suite 0.1.4:
 배포 예제의 expected/에는 검증된 CSV와 그림을 담았습니다. 설치 프로그램은 포함하지 않습니다.
 
 확인 범위
-새 예제는 macOS Stata/MP16.1에서 실행했습니다. 현재 suite의 외부 Windows 결과는
-별도로 수집 중입니다. 이 스크립트가 설치 전체 검증을 대체하지는 않습니다.
+이 예제는 macOS Stata/MP16.1에서 실행했습니다. Windows 설치·재설치 검증은
+suite 0.1.5에서 완료되었으며 0.1.6과 이 별도 예제의 Windows 실행을 의미하지 않습니다. 이 스크립트가 설치 전체 검증을 대체하지는 않습니다.
 외부 설치 검증에는 기존 suite의 do validate_installation.do를 사용합니다.
 독립 정규 관측값과 공통 분산을 가정하며 패널·이분산·DEA 분석 예제가 아닙니다.
+
+완전한 원문 출처
+Edwards, Donald G., and Hsu, Jason C. (1983). Multiple Comparisons with the Best Treatment. Journal of the American Statistical Association, 78(384), 965-971. https://doi.org/10.2307/2288211
+
+Edwards, Donald G., and Hsu, Jason C. (1984). Corrigenda: Multiple Comparisons with the Best Treatment. Journal of the American Statistical Association, 79(388), 965. https://doi.org/10.2307/2288771
+1984년 정오표는 보정식에 관한 것이며 원문의 수치 예제는 영향을 받지 않습니다.
+허용거리 epsilon=25는 이 소프트웨어 예제의 설명용 선택입니다.

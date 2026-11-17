@@ -1,4 +1,4 @@
-MCB suite 0.1.5 release candidate. Copyright 2026 Choonjoo Lee. AFL-3.0.
+MCB suite 0.1.6 release candidate. Copyright 2026 Choonjoo Lee. AFL-3.0.
 Core 0.9.2, summary 0.1.1, margin 0.1.1; Edwards-Hsu upper bound aligned with the original theorem.
 From the complete extracted folder: do install_mcbhsu_suite.do
 Then: help mcbhsu_suite

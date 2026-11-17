@@ -166,16 +166,47 @@ distinct control-size settings, not groups; both are zero for Tukey.
 Macros: {cmd:cmd}, {cmd:version}, {cmd:method}, {cmd:best}, {cmd:target},
 {cmd:depvar}, {cmd:over}, {cmd:group1}... (labels), {cmd:key1}... (raw string keys).{p_end}
 
-{title:References and author}
+{marker references}{...}
+{title:References}
 
-{pstd}Edwards, D. G., and J. C. Hsu. 1983. Multiple comparisons with the best
-treatment. JASA 78:965-971. doi:10.1080/01621459.1983.10477047.
-Hsu, J. C. 1996. Multiple Comparisons: Theory and Methods. Chapman & Hall.{p_end}
+{pstd}Edwards, Donald G., and Hsu, Jason C. (1983). Multiple Comparisons with the Best Treatment. Journal of the American Statistical Association, 78(384), 965-971. 
+{browse "https://doi.org/10.2307/2288211":10.2307/2288211}.{p_end}
 
-{pstd}Algorithm reference: SAS Sample Library, MCB, Randy Tobias, updated
-16 January 1996:
-{browse "https://support.sas.com/documentation/onlinedoc/stat/ex_code/132/mcb.html":official source}.
-New Stata/Mata implementation; no SAS macro source is distributed.
-SAS, Minitab, and JMP executables have not been run for validation.{p_end}
+{pstd}Edwards, Donald G., and Hsu, Jason C. (1984). Corrigenda: Multiple Comparisons with the Best Treatment. Journal of the American Statistical Association, 79(388), 965. 
+{browse "https://doi.org/10.2307/2288771":10.2307/2288771}.{p_end}
+
+{pstd}Hsu, Jason C. (1981). Simultaneous Confidence Intervals for all Distances from the "Best". The Annals of Statistics, 9(5), 1026-1034. 
+{browse "https://doi.org/10.1214/aos/1176345582":10.1214/aos/1176345582}.{p_end}
+
+{pstd}Hsu, Jason C. (1984). Constrained Simultaneous Confidence Intervals for Multiple Comparisons with the Best. The Annals of Statistics, 12(3), 1136-1144. 
+{browse "https://doi.org/10.1214/aos/1176346732":10.1214/aos/1176346732}.{p_end}
+
+{pstd}Hsu, Jason C. (1996). Multiple Comparisons: Theory and Methods. London: Chapman & Hall. ISBN 0-412-98281-1. 
+{browse "https://www.asc.ohio-state.edu/hsu.1/book.html":Source}.{p_end}
+
+{pstd}Tukey, John W. (1949). Comparing Individual Means in the Analysis of Variance. Biometrics, 5(2), 99-114. 
+{browse "https://doi.org/10.2307/3001913":10.2307/3001913}.{p_end}
+
+{pstd}Kramer, Clyde Young (1956). Extension of Multiple Range Tests to Group Means with Unequal Numbers of Replications. Biometrics, 12(3), 307-310. 
+{browse "https://doi.org/10.2307/3001469":10.2307/3001469}.{p_end}
+
+{pstd}SAS Institute Inc. (1996). MCB: Multiple Comparisons with the Best. SAS Sample Library; support: Randy Tobias; updated 16 January 1996. 
+{browse "https://support.sas.com/documentation/onlinedoc/stat/ex_code/132/mcb.html":Source}.{p_end}
+
+{pstd}Cite Edwards and Hsu (1983) together with their 1984 JASA corrigendum
+for {cmd:method(edwardshsu)}. Hsu (1984) in The Annals of Statistics is a
+different paper, concerning constrained MCB; its balanced theorem alone does
+not prove the unequal-size implementation. For the default constrained method,
+cite Hsu (1984) and Hsu (1996); for {cmd:method(tukeygap)}, cite Tukey (1949),
+Kramer (1956) and Hsu (1996). Cite the software separately using CITATION.cff
+in the downloaded folder. Summary input and practical margins retain the
+references of the chosen source method. See docs/methods.md for the mapping
+and docs/references.bib for BibTeX entries.{p_end}
+
+{pstd}The SAS sample is a mathematical algorithm reference. This is a new
+Stata/Mata implementation; no SAS macro source is distributed. SAS, Minitab
+and JMP executables have not been run for validation.{p_end}
+
+{title:Author and license}
 
 {pstd}Choonjoo Lee. Copyright 2026. AFL-3.0; see mcbhsu_license.txt.{p_end}

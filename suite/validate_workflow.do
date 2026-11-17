@@ -97,5 +97,5 @@ copy "onboarding_example/decisions.csv" `"`outdir'/first_steps_decisions.csv"'
 copy "onboarding_example/decisions.png" `"`outdir'/first_steps_decisions.png"'
 file open receipt using `"`outdir'/status.txt"', write
 file write receipt "MCBHSU_INSTALLATION_CHECK_PASSED" _n
-file write receipt "Suite 0.1.5; installation and reinstallation; installed help; examples; 14 quickchecks." _n
+file write receipt "Suite 0.1.6; installation and reinstallation; installed help; examples; 14 quickchecks." _n
 file close receipt

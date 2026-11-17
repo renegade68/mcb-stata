@@ -1,5 +1,15 @@
 # Changes
 
+## Suite 0.1.6: complete reference attribution
+
+This documentation revision supplies complete bibliographic entries, identifies
+the distinct 1984 publications, maps methods to their sources, and adds BibTeX
+and structured CFF references. Calculation files and all help example commands
+are unchanged. Package checksums are regenerated for the revised documents.
+macOS/MP 16.1 installation, reinstallation, all 57 help commands and 14 analytic
+quickchecks passed. Native Windows evidence covers suite 0.1.5; this revised
+package has not been rerun on Windows. See [validation](docs/validation.md).
+
 ## Suite 0.1.5: Windows installer correction
 
 Core 0.9.2 and summary/margin 0.1.1 calculations are unchanged. On Windows/MP

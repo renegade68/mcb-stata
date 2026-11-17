@@ -1,19 +1,9 @@
-## Suite 0.1.5: Windows 설치 검사 수정
-
-Windows Stata/MP16.1에서 기존 suite0.1.4의 수치 점검14건은 통과했습니다.
-설치 검사는 설치 파일의 LF→CRLF 변환을 내용 변경으로 오인하여 r(459)로 중단되었습니다.
-이번 후보판은 설치된 파일의 원본 바이트 또는 완전한 CRLF 변환만 허용합니다.
-압축 해제 원본의 검사는 엄격하게 유지하며 계산 엔진6파일은 변경하지 않았습니다.
-Windows의 전체 설치·도움말 실행은 새 후보판으로 재검증해야 합니다.
-새 폴더에 전체 ZIP을 풀고 새 Stata 세션에서 do validate_installation.do를 실행하세요.
-완료 후 mcbhsu_installation_check/results 폴더를 공유하면 됩니다.
-
 # Stata에서 최선 집단과 비교하기
 
 독립적인 여러 집단의 평균을 알 수 없는 최선의 모집단 평균과 비교합니다.
 일원 정규모형과 집단 간 공통 분산을 가정합니다. [English guide](README.md).
 
-**Suite 0.1.5 — 배포 후보판.** Stata 16.1 이상이 필요하며, 일반적인 실행에는 R·Python·SSC 패키지가 필요하지 않습니다.
+**Suite 0.1.6 — 배포 후보판.** Stata 16.1 이상이 필요하며, 일반적인 실행에는 R·Python·SSC 패키지가 필요하지 않습니다.
 
 | 명령 | 입력과 용도 | 버전 |
 |---|---|---|
@@ -101,8 +91,8 @@ mcbhsumargin, epsilon(5) graph
 일부 불균형 설계와 작은 꼬리확률에서는 수치적분에 시간이 걸립니다.
 
 데이터를 저장한 뒤 `do verify.do`로 14개 자체 점검을 실행할 수 있습니다.
-macOS Stata/MP 16.1에서 설치와 전체 흐름을 확인했고, Windows/MP 16.1에서 별도로 받은 수치 결과도 확인했습니다.
-Windows 설치 과정 전체를 검증한 것은 아닙니다. [검증 범위와 한계](docs/validation.md)를 참고하세요.
+이번 0.1.6은 참고문헌·문서 개정판이며 macOS Stata/MP 16.1에서 설치·재설치와 예제를 확인했습니다.
+Windows 설치·재설치 및 수치 검증은 0.1.5에서 완료되었으며 0.1.6을 Windows에서 다시 실행한 것은 아닙니다. [검증 범위와 한계](docs/validation.md)를 참고하세요.
 지원하는 정규·공통분산 모형은 Edwards–Hsu 1983 논문과 1984 JASA 정오표를 대조했습니다.
 0.9.2 엔진은 원문대로 모든 다른 집단을 사용하여 상한을 계산합니다. 출판 예제와 회귀검증 범위는 [검증 기록](docs/validation.md)을 확인하세요.
 새 허용거리 명령을 사용하려면 이전 버전에서 저장한 결과를 이번 suite로 다시 계산하세요. 상용 소프트웨어 실행 결과와의 인증된 동등성은 주장하지 않습니다.
@@ -117,3 +107,7 @@ do validate_installation.do "windows_check_015_second"
 ```
 
 폴더 중복 오류와 로그에 기록된 checksum r(459)는 별개의 오류입니다.
+
+## 참고문헌과 인용
+
+[완전한 참고문헌과 방법별 근거](docs/methods.md#references-and-attribution) · [BibTeX](docs/references.bib) · [소프트웨어 인용](CITATION.cff)
